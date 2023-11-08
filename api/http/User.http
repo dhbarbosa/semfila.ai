@@ -1,0 +1,14 @@
+GET http://{{ip}}:{{port}}/v1/user/
+Accept: application/json
+
+###
+POST http://{{ip}}:{{port}}/v1/user/create
+Content-Type: application/json
+
+{
+  "name": "Nome do Usuário",
+  "cpf": "12345678909",
+  "phone": "12345678901",
+  "birthday": "2000-01-01"
+}
+

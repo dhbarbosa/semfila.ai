@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${IP_BD:localhost}:${PORT:5432}/${POSTGRES_DB:semfila}
+    username: ${POSTGRES_USER:root}
+    password: ${POSTGRES_PASSWORD:123456789}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+      show-sql: true
