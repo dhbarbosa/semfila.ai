@@ -1,10 +1,13 @@
+package ai.semfila.api.DTO.user;
 
 import ai.semfila.api.model.User;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 public record UserResponse(
+        UUID id,
     String name,
     String phone,
     LocalDate birthday,
@@ -12,6 +15,6 @@ public record UserResponse(
 
 ) {
     public UserResponse(User user){
-        this(user.getName(), user.getPhone(), user.getBirthday(), user.getCreateAt());
+        this(user.getId(),user.getName(), user.getPhone(), user.getBirthday(), user.getCreateAt());
     }
 }

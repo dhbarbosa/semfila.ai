@@ -11,6 +11,7 @@ public record UserRequest(
         @NotBlank
         String name,
         @CPF
+        @NotBlank
         String cpf,
         @Pattern(regexp ="^[0-9]{11}$")
         @NotBlank

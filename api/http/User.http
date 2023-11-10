@@ -7,8 +7,24 @@ Content-Type: application/json
 
 {
   "name": "Nome do Usuário",
-  "cpf": "12345678909",
-  "phone": "12345678901",
+  "cpf": "009.326.832-60",
+  "phone": "11940055071",
   "birthday": "2000-01-01"
 }
 
+###
+GET http://{{ip}}:{{port}}/v1/user/cpf/00932683860
+
+###
+GET http://{{ip}}:{{port}}/v1/user/c3a8fba8-a467-41e2-8cc3-65ed834be87b
+
+###
+PUT http://{{ip}}:{{port}}/v1/user/c3a8fba8-a467-41e2-8cc3-65ed834be87b
+Content-Type: application/json
+
+{
+  "name": "Diogo Henrique Barbosa"
+}
+
+###
+DELETE http://{{ip}}:{{port}}/v1/user/c3a8fba8-a467-41e2-8cc3-65ed834be87b
