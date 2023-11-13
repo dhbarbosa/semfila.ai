@@ -1,25 +1,31 @@
-GET http://{{ip}}:{{port}}/v1/user/
-Accept: application/json
-
-###
 POST http://{{ip}}:{{port}}/v1/user/create
 Content-Type: application/json
 
 {
   "name": "Nome do Usuário",
-  "cpf": "009.326.832-60",
+  "cpf": "009.326.838-60",
   "phone": "11940055071",
   "birthday": "2000-01-01"
 }
 
-###
-GET http://{{ip}}:{{port}}/v1/user/cpf/00932683860
+> {%
+    client.global.set("id", response.body.id);
+    client.global.set("cpf", response.body.cpf);
+%}
 
 ###
-GET http://{{ip}}:{{port}}/v1/user/c3a8fba8-a467-41e2-8cc3-65ed834be87b
+
+GET http://{{ip}}:{{port}}/v1/user/
+Accept: application/json
 
 ###
-PUT http://{{ip}}:{{port}}/v1/user/c3a8fba8-a467-41e2-8cc3-65ed834be87b
+GET http://{{ip}}:{{port}}/v1/user/cpf/{{cpf}}
+
+###
+GET http://{{ip}}:{{port}}/v1/user/{{id}}
+
+###
+PUT http://{{ip}}:{{port}}/v1/user/{{id}}
 Content-Type: application/json
 
 {

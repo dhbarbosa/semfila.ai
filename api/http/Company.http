@@ -1,0 +1,35 @@
+POST http://{{ip}}:{{port}}/v1/company/create
+Content-Type: application/json
+
+{
+  "name": "Minha Empresa",
+  "cnpj": "05.676.905/0001-08",
+  "address": "Rua da Empresa, 123",
+  "phone": "12345678901"
+}
+> {%
+    client.global.set("id", response.body.id);
+    client.global.set("cnpj", response.body.cnpj);
+%}
+
+###
+GET http://{{ip}}:{{port}}/v1/company/
+
+###
+
+GET http://{{ip}}:{{port}}/v1/company/cnpj/{{cnpj}}
+
+###
+
+GET http://{{ip}}:{{port}}/v1/company/{{id}}
+
+###
+PUT http://{{ip}}:{{port}}/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+
+{
+  "name": "Djanira-ME"
+}
+
+###
+#DELETE http://{{ip}}:{{port}}/v1/company/{{id}}
