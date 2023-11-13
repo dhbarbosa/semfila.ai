@@ -1,11 +1,8 @@
 package ai.semfila.api.DTO.user;
 
-import jakarta.validation.constraints.NotBlank;
-
 import java.time.LocalDate;
-import java.util.UUID;
 
-public record UserRequestUpdate(
+public record UserUpdateRequest(
         String name,
 
         LocalDate birthday

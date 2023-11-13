@@ -49,8 +49,8 @@ public class UserController {
 
     }
     @PutMapping("/{id}")
-    public ResponseEntity<UserResponse> update(@PathVariable UUID id, @RequestBody @Valid UserRequestUpdate userRequestUpdate){
-        var user = this.service.update(id, userRequestUpdate);
+    public ResponseEntity<UserResponse> update(@PathVariable UUID id, @RequestBody @Valid UserUpdateRequest userUpdateRequest){
+        var user = this.service.update(id, userUpdateRequest);
 
         return methodResponse(user);
 

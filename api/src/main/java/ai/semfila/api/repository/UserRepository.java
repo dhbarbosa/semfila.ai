@@ -17,7 +17,8 @@ import java.util.UUID;
 @Repository
 public interface UserRepository extends JpaRepository<User, UUID> {
 
-    @Query("SELECT user FROM User user WHERE user.deleted = false") @Override
+    @Override
+    @Query("SELECT user FROM User user WHERE user.deleted = false")
     Page<User> findAll(Pageable pageable);
 
     @Query("SELECT user FROM User user WHERE user.deleted = false and user.id = ?1")

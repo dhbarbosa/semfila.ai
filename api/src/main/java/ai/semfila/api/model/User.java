@@ -2,7 +2,7 @@ package ai.semfila.api.model;
 
 
 import ai.semfila.api.DTO.user.UserRequest;
-import ai.semfila.api.DTO.user.UserRequestUpdate;
+import ai.semfila.api.DTO.user.UserUpdateRequest;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -56,13 +56,13 @@ public class User implements Serializable {
         this.name = userRequest.name();
         this.cpf = userRequest.cpf().replace(".","").replace("-","");
         this.birthday = userRequest.birthday();
-        this.phone = userRequest.phone();
+        this.phone = userRequest.phone().replace("-","").replace("()","");
         this.deleted = false;
         this.updateAt = LocalDateTime.now();
         this.createAt = LocalDateTime.now();
     }
 
-    public void update(UserRequestUpdate userRequestUpdate) {
+    public void update(UserUpdateRequest userRequestUpdate) {
         if(userRequestUpdate.name() != null){
             this.name= userRequestUpdate.name();
             this.updateAt = LocalDateTime.now();

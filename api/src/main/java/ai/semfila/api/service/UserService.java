@@ -1,7 +1,6 @@
 package ai.semfila.api.service;
 
-import ai.semfila.api.DTO.user.UserRequestUpdate;
-import ai.semfila.api.DTO.user.UserResponse;
+import ai.semfila.api.DTO.user.UserUpdateRequest;
 import ai.semfila.api.model.User;
 import ai.semfila.api.repository.UserRepository;
 import jakarta.transaction.Transactional;
@@ -40,13 +39,13 @@ public class UserService {
     }
 
     @Transactional
-    public Optional<User> update(UUID id, UserRequestUpdate userRequestUpdate) {
+    public Optional<User> update(UUID id, UserUpdateRequest userUpdateRequest) {
         var user = repository.findById(id);
-        if(repository.findById(id).isEmpty()){
+        if(user.isEmpty()){
            return  user;
         }
 
-        user.get().update(userRequestUpdate);
+        user.get().update(userUpdateRequest);
         return  user;
     }
 
