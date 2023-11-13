@@ -32,4 +32,4 @@ Content-Type: application/json
 }
 
 ###
-#DELETE http://{{ip}}:{{port}}/v1/company/{{id}}
+DELETE http://{{ip}}:{{port}}/v1/company/{{id}}

@@ -33,4 +33,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://{{ip}}:{{port}}/v1/user/c3a8fba8-a467-41e2-8cc3-65ed834be87b
+DELETE http://{{ip}}:{{port}}/v1/user/{{id}}}

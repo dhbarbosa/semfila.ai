@@ -1,0 +1,614 @@
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T203041.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-13T203034.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-13T202836.200.json
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T201608.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-13T201436.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T201341.200.json
+
+###
+
+PUT http://localhost:8080/v1/user/8e7096c7-9fbc-4793-8789-47a24fc733c6
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Diogo Henrique Barbosa"
+}
+
+<> 2023-11-13T201334.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-13T201201.200.json
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T201158.200.json
+
+###
+
+PUT http://localhost:8080/v1/user/8e7096c7-9fbc-4793-8789-47a24fc733c6
+Content-Type: application/json
+Content-Length: 43
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Isabella dos Santos Barbosa"
+}
+
+<> 2023-11-13T201155.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T201150.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T201141.200.json
+
+###
+
+PUT http://localhost:8080/v1/user/8e7096c7-9fbc-4793-8789-47a24fc733c6
+Content-Type: application/json
+Content-Length: 43
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Isabella dos Santos Barbosa"
+}
+
+<> 2023-11-13T201134.200.json
+
+###
+
+PUT http://localhost:8080/v1/user/8e7096c7-9fbc-4793-8789-47a24fc733c6
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Diogo Henrique Barbosa"
+}
+
+<> 2023-11-13T201112.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T201044.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T200613.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T200609.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T200556.200.json
+
+###
+
+PUT http://localhost:8080/v1/user/8e7096c7-9fbc-4793-8789-47a24fc733c6
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Diogo Henrique Barbosa"
+}
+
+<> 2023-11-13T200547.200.json
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T200521.200.json
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T200243.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-13T200231.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-13T200101.200.json
+
+###
+
+GET http://localhost:8080/v1/company/null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T200100.400.json
+
+###
+
+GET http://localhost:8080/v1/company/cnpj/null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T200059.200.json
+
+###
+
+POST http://localhost:8080/v1/company/create
+Content-Type: application/json
+Content-Length: 123
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Minha Empresa",
+  "cnpj": "05.676.905/0001-08",
+  "address": "Rua da Empresa, 123",
+  "phone": "12345678901"
+}
+
+<> 2023-11-13T200056-1.500.json
+
+###
+
+POST http://localhost:8080/v1/company/create
+Content-Type: application/json
+Content-Length: 123
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Minha Empresa",
+  "cnpj": "05.676.905/0001-08",
+  "address": "Rua da Empresa, 123",
+  "phone": "12345678901"
+}
+
+<> 2023-11-13T200056.500.json
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T164023.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-11T163720-1.404.json
+
+###
+
+GET http://localhost:8080/v1/company/null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T163720.404.json
+
+###
+
+GET http://localhost:8080/v1/company/cnpj/null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T163719-1.404.json
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T163719.404.json
+
+###
+
+POST http://localhost:8080/v1/company/create
+Content-Type: application/json
+Content-Length: 123
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Minha Empresa",
+  "cnpj": "05.676.905/0001-08",
+  "address": "Rua da Empresa, 123",
+  "phone": "12345678901"
+}
+
+<> 2023-11-11T163718.404.json
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T163656.404.json
+
+###
+
+GET http://localhost:8080/v1/company/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T163647.404.json
+
+###
+
+POST http://localhost:8080/v1/user/create
+Content-Type: application/json
+Content-Length: 113
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Nome do Usuário",
+  "cpf": "009.326.838-60",
+  "phone": "11940055071",
+  "birthday": "2000-01-01"
+}
+
+<> 2023-11-11T163628.404.json
+
+###
+
+DELETE http://localhost:8080/v1/user/c3a8fba8-a467-41e2-8cc3-65ed834be87b
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+PUT http://localhost:8080/v1/user/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Diogo Henrique Barbosa"
+}
+
+###
+
+GET http://localhost:8080/v1/user/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8080/v1/user/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T004718.200.json
+
+###
+
+POST http://localhost:8080/v1/user/create
+Content-Type: application/json
+Content-Length: 113
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Nome do Usuário",
+  "cpf": "009.326.838-60",
+  "phone": "11940055071",
+  "birthday": "2000-01-01"
+}
+
+<> 2023-11-11T004714.500.json
+
+###
+
+POST http://localhost:8080/v1/user/create
+Content-Type: application/json
+Content-Length: 113
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Nome do Usuário",
+  "cpf": "009.326.838-60",
+  "phone": "11940055071",
+  "birthday": "2000-01-01"
+}
+
+<> 2023-11-11T004706.200.json
+
+###
+
+POST http://localhost:8080/v1/user/create
+Content-Type: application/json
+Content-Length: 113
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Nome do Usuário",
+  "cpf": "009.326.838-60",
+  "phone": "11940055071",
+  "birthday": "2000-01-01"
+}
+
+<> 2023-11-11T004637.500.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-11T004106.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-11T003802.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-11T003755.200.json
+
+###
+
+PUT http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Content-Type: application/json
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Djanira-ME"
+}
+
+<> 2023-11-11T003653.200.json
+
+###
+
+GET http://localhost:8080/v1/company/a76e15b6-8b86-489b-a50b-f046a7654cf4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-11T003652-1.200.json
+
+###
+
+GET http://localhost:8080/v1/company/cnpj/null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+

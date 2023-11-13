@@ -51,7 +51,7 @@ public class CompanyController {
     }
 
     @PutMapping("/{id}")
-    public  ResponseEntity<CompanyResponse> update(@PathVariable UUID id, CompanyUpdateRequest companyUpdateRequest){
+    public  ResponseEntity<CompanyResponse> update(@PathVariable UUID id, @RequestBody CompanyUpdateRequest companyUpdateRequest){
         var company = this.service.update(id, companyUpdateRequest);
         return methodResponse(company);
     }

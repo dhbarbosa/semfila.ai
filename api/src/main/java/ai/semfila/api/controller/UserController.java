@@ -53,7 +53,6 @@ public class UserController {
         var user = this.service.update(id, userUpdateRequest);
 
         return methodResponse(user);
-
     }
 
     @DeleteMapping("/{id}")
