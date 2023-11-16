@@ -116,7 +116,6 @@ Barbara, 24, costuma ir na balada todo fim de semana.
 </p>
 
 A logo tem o objeivo de ser simples, direta e minimalista, ao colocar apenas o nome da aplicação, temos o foco em apresentar logo de cara o que software propõe. O ".ai" serve como trocadilho para soar algo como "Sem fila ai", reforçando que o objetivo da aplicação é eliminar a demora de uma fila, além de mostrar também que é um serviço tecnológico sofisticado.
-----
 
 ### Referencias
 
