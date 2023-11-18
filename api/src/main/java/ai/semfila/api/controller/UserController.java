@@ -31,8 +31,12 @@ public class UserController {
 
     @PostMapping("/create")
     public ResponseEntity<UserResponse> create(@RequestBody @Valid UserRequest userRequest){
-        var newUser = this.service.save(new User(userRequest));
-        return ResponseEntity.status(HttpStatus.OK).body(new UserResponse(newUser)) ;
+        var userExist = this.service.findByCpf(userRequest.cpf().replace(".","").replace("-",""));
+        if (userExist.isEmpty()){
+            var newUser = this.service.save(new User(userRequest));
+            return ResponseEntity.status(HttpStatus.OK).body(new UserResponse(newUser)) ;
+        }
+        return ResponseEntity.badRequest().build();
     }
 
     @GetMapping("/{id}")

@@ -1,0 +1,9 @@
+FROM postgres:latest
+
+ENV POSTGRES_USER=root
+ENV POSTGRES_PASSWORD=123456789
+ENV POSTGRES_DB=semfila
+
+EXPOSE 5432
+
+CMD ["postgres"]

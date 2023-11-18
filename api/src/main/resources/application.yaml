@@ -12,3 +12,6 @@ spring:
           lob:
             non_contextual_creation: true
           show-sql: true
+springdoc:
+  swagger-ui:
+    enabled: true
