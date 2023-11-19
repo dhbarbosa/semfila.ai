@@ -1,13 +1,16 @@
 package ai.semfila.api.model;
 
 
+import ai.semfila.api.DTO.type.TypeRequest;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -15,6 +18,7 @@ import java.util.UUID;
 @Table(name = "TYPE")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Type  implements Serializable {
 
     @Serial
@@ -24,7 +28,7 @@ public class Type  implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    private String type;
+    private String name;
 
     private String description;
 
@@ -39,4 +43,24 @@ public class Type  implements Serializable {
 
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
+
+    public Type(TypeRequest typeRequest) {
+        this.name = typeRequest.name();
+        this.description = typeRequest.description();
+        this.deleted = false;
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+        this.product = new ArrayList<>();
+    }
+
+    public void update(TypeRequest typeRequest){
+        if(typeRequest.name() != null){
+            this.name = typeRequest.name();
+            this.updatedAt = LocalDateTime.now();
+        }
+        if(typeRequest.description() != null){
+            this.description = typeRequest.description();
+            this.updatedAt = LocalDateTime.now();
+        }
+    }
 }
