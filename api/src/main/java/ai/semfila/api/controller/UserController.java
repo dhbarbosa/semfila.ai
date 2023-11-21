@@ -12,7 +12,9 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
 
+import java.net.URI;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -30,11 +32,12 @@ public class UserController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<UserResponse> create(@RequestBody @Valid UserRequest userRequest){
+    public ResponseEntity<UserResponse> create(@RequestBody @Valid UserRequest userRequest, UriComponentsBuilder uriBuilder){
         var userExist = this.service.findByCpf(userRequest.cpf().replace(".","").replace("-",""));
         if (userExist.isEmpty()){
             var newUser = this.service.save(new User(userRequest));
-            return ResponseEntity.status(HttpStatus.OK).body(new UserResponse(newUser)) ;
+            URI uri = uriBuilder.path("/v1/user/{id}").buildAndExpand(newUser.getId()).toUri();
+            return ResponseEntity.created(uri).body(new UserResponse(newUser)) ;
         }
         return ResponseEntity.badRequest().build();
     }

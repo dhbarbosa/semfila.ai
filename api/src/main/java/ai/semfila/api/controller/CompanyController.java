@@ -13,7 +13,9 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
 
+import java.net.URI;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -32,9 +34,14 @@ public class CompanyController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<CompanyResponse> save(@RequestBody @Valid CompanyRequest companyRequest){
-        var company = this.service.save(new Company(companyRequest));
-        return ResponseEntity.ok(new CompanyResponse(company));
+    public ResponseEntity<CompanyResponse> save(@RequestBody @Valid CompanyRequest companyRequest, UriComponentsBuilder uriBuilder){
+        var comapnyExist = this.service.findByCnpj(companyRequest.cnpj().replace(".","").replace("-","").replace("/", ""));
+        if (comapnyExist.isEmpty()){
+            var company = this.service.save(new Company(companyRequest));
+            URI uri = uriBuilder.path("/v1/company/{id}").buildAndExpand(company.getId()).toUri();
+            return ResponseEntity.created(uri).body(new CompanyResponse(company));
+        }
+        return ResponseEntity.badRequest().build();
     }
 
     @GetMapping("/{id}")
