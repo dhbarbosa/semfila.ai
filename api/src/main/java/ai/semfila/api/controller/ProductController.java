@@ -55,7 +55,7 @@ public class ProductController {
         return methodResponse(product);
 
     }
-    
+
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable UUID id){
         this.service.delete(id);
