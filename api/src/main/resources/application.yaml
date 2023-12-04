@@ -1,8 +1,9 @@
 spring:
   datasource:
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${IP_BD:localhost}:${PORT:5432}/${POSTGRES_DB:semfila}
-    username: ${POSTGRES_USER:root}
-    password: ${POSTGRES_PASSWORD:123456789}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:1234567}
   jpa:
     hibernate:
       ddl-auto: update
@@ -12,3 +13,9 @@ spring:
           lob:
             non_contextual_creation: true
           show-sql: true
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: semfila

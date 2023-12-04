@@ -47,9 +47,9 @@ public class Company implements Serializable {
 
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
-
+/*
     @OneToMany(mappedBy = "company")
-    private List<Product> products;
+    private List<Product> products;*/
 
     public Company(CompanyRequest companyRequest) {
         this.name = companyRequest.name();
@@ -59,7 +59,9 @@ public class Company implements Serializable {
         this.deleted = false;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
+/*
         this.products = new ArrayList<>();
+*/
     }
 
     public void update(CompanyUpdateRequest companyUpdateRequest) {

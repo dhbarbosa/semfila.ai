@@ -24,9 +24,9 @@ public class Orders implements Serializable {
     @JoinColumn(name="commands_id")
     private Commands commands;
 
-    @ManyToOne
+/*    @ManyToOne
     @JoinColumn(name = "product_id")
-    private Product product;
+    private Product product;*/
 
     private String comments;
 

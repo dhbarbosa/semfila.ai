@@ -31,9 +31,11 @@ public class Type  implements Serializable {
     private String name;
 
     private String description;
+/*
 
     @OneToMany(mappedBy = "type")
     private List<Product> product;
+*/
 
     @Column(name = "deleted")
     private Boolean deleted;
@@ -50,7 +52,9 @@ public class Type  implements Serializable {
         this.deleted = false;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
+/*
         this.product = new ArrayList<>();
+*/
     }
 
     public void update(TypeRequest typeRequest){

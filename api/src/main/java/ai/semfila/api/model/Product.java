@@ -1,51 +1,43 @@
 package ai.semfila.api.model;
 
+import ai.semfila.api.DTO.Product.ProductRequest;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
-@Entity
 @NoArgsConstructor
 @Data
-@Table(name="PRODUCT")
+@Document(collection = "Product")
 public class Product implements Serializable {
     @Serial
     private static final long serialVersionUID= 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private String id;
 
-    @Column(name = "name")
+    @Field( "name")
     private String name;
 
-    @Column(name = "price")
+    @Field("price")
     private BigDecimal price;
 
-    @ManyToOne
-    @JoinColumn(name = "company_id")
-    private Company company;
+    @Field(name = "company_id")
+    private String company;
 
-    @OneToMany(mappedBy = "product")
-    private List<Orders> orders;
+    @Field("orders_id")
+    private String orders;
 
-    @ManyToOne
-    @JoinColumn(name ="type_id")
-    private Type type;
+    @Field("type")
+    private String type;
 
-    @Column(name = "deleted")
-    private Boolean deleted;
-
-    @Column(name = "created_at")
-    private LocalDateTime createdAt;
-
-    @Column(name = "updated_at")
-    private LocalDateTime updatedAt;
 }
